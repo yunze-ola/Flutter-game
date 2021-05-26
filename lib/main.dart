@@ -50,7 +50,6 @@ class _MyHomePageState extends State<MyHomePage> {
           title: StreamBuilder(
         stream: _controller.stream.distinct(),
         builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-          print("oppa buidling");
           if (snapshot.hasData) {
             return Text("You entered: ${snapshot.data}");
           }
