@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
           if (snapshot.hasData) {
             return Text("You entered: ${snapshot.data}");
           }
-          return Text("waiting");
+          return Text("waiting for input");
         },
       )),
       body: Stack(
